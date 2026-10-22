@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <link rel="stylesheet" href="css/html5reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>Resumes</title>
   </head>
   <body>
     <header>
-      <a href="#main">Skip to Main Content</a>
+      <a href="#main" id="skip-content">Skip to Main Content</a>
       <img
         src="images/UMSI_signature_vertical_informal_solidblue.jpg"
         alt="UMSI Logo"
@@ -19,14 +22,16 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="prep.html">Preparing for Your Experience</a></li>
           <li><a href="start.html">Start Your Experience</a></li>
-          <li><a href="during.html">During the Experience</a></li>
+          <li><a href="during.html" class="active">During the Experience</a></li>
         </ul>
       </nav>
-      <h1>Navigating Your Active Project</h1>
-      <h2>
-        Master the art of adaptive project management, human-centered fieldwork,
-        and constructive feedback as you execute your project in real time.
-      </h2>
+      <div id="title">
+        <h1>Navigating Your Active Project</h1>
+        <h2>
+          Master the art of adaptive project management, human-centered fieldwork,
+          and constructive feedback as you execute your project in real time.
+        </h2>
+      </div>
     </header>
     <main id="main">
       <section>
@@ -57,8 +62,8 @@
           communication with project sponsors.
         </p>
         <h3>Focus & Objectives</h3>
-        <ul>
-          <li>
+        <ul class="card-grid">
+          <li class="card">
             <img
               src="images/UMSI_ASB2026CIRCAPintig_46.jpg"
               alt="Student conducting contextual research in a warehouse"
@@ -69,7 +74,7 @@
               insights.
             </p>
           </li>
-          <li>
+          <li class="card">
             <img
               src="images/UMSI_ASB2026CIRCAPintig_06.jpg"
               alt="group picture with students and client(s)"
@@ -77,7 +82,7 @@
             <h4>Sponsor & Client Updates</h4>
             <p>Maintain transparency with regular progress reporting.</p>
           </li>
-          <li>
+          <li class="card">
             <img
               src="images/UMSI_ASB2026CIRCAPintig_37.jpg"
               alt="client and students having a group discussion"
@@ -132,22 +137,22 @@
           defines a successful project.
         </p>
         <h3>Focus & Objectives</h3>
-        <ul>
-          <li>
+        <ul class="card-grid">
+          <li class="card">
             <h4>Completing & Transitioning Work</h4>
             <p>
               Package code, design files, reports, and technical assets into
               accessible, usable formats for your partner.
             </p>
           </li>
-          <li>
+          <li class="card">
             <h4>Closing Relationships Appropriately</h4>
             <p>
               Formally conclude the project with gratitude, clarity, and clear
               future boundaries.
             </p>
           </li>
-          <li>
+          <li class="card">
             <h4>Evaluating Impact</h4>
             <p>
               Measure project outcomes against initial scoping goals and gather
@@ -158,7 +163,7 @@
 
         <h4>Featured Resources & Handouts</h4>
 
-        <div>
+        <div class="stack">
           <a
             href="https://docs.google.com/document/d/1-gfg_EZ3T8pa3T0a130Qvtpl1bYoLOVEHSNpGHcJtFA/edit?usp=drive_link"
             ><h5>Exiting a Community-Engaged Project Worksheet</h5>
@@ -200,22 +205,22 @@
         </p>
 
         <h3>Focus & Objectives</h3>
-        <ul>
-          <li>
+        <ul class="card-grid">
+          <li class="card">
             <h4>Articulating Skills</h4>
             <p>
               Translate unscripted, complex project work into compelling resume
               bullets and interview responses.
             </p>
           </li>
-          <li>
+          <li class="card">
             <h4>Portfolio Integration</h4>
             <p>
               Document your process, artifacts, key decisions, and measurable
               outcomes.
             </p>
           </li>
-          <li>
+          <li class="card">
             <h4>Maintaining Networks</h4>
             <p>
               Keep professional touchpoints open with mentors, community
@@ -227,8 +232,9 @@
 
       <section>
         <h2>Featured Resources & Handouts</h2>
-        <div>
+        <div class="card-grid">
           <a
+            class="card"
             href="https://docs.google.com/document/d/1mjyX6jgqXFrY7SFYaA3J2cTh1ZnHH0FKF5aUKfXzXKo/edit?tab=t.0"
           >
             <img
@@ -243,6 +249,7 @@
           </a>
 
           <a
+            class="card"
             href="https://docs.google.com/document/d/1jwQg_Y4jECLPHqcyOtJtDTK5x-68KstexfPbh6jXHnA/edit?tab=t.0"
           >
             <img
@@ -256,6 +263,7 @@
             </p>
           </a>
           <a
+            class="card"
             href="https://careercenter.umich.edu/content/interviewing-resources"
           >
             <img
