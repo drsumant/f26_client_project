@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <header>
@@ -18,7 +19,8 @@
         alt="UMSI Logo"
       />
       <nav>
-        <ul>
+        <button type="button" id="menu-toggle">Menu</button>
+        <ul id="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="prep.html" class="active">Preparing for Your Experience</a></li>
           <li><a href="start.html">Start Your Experience</a></li>
@@ -228,9 +230,17 @@
         <h2>Phase 2: Starting the Experience?</h2>
 
         <div class="text-image">
-          <a href="start.html" class="button"
-            >Read more about how you can have a strong start with ELO</a
-          >
+          <div>
+            <p>
+              Once your goals are set and your team is ready, the next step is
+              building a strong working relationship with your partner. Find
+              email templates, a first-meeting agenda, and partnership
+              agreements to help you kick things off.
+            </p>
+            <a href="start.html" class="button"
+              >Read more about how you can have a strong start with ELO</a
+            >
+          </div>
           <img
             src="images/UMSI_ViewbookMSI2026_18.jpg"
             alt="student having a discussion with someone from ELO"
@@ -250,7 +260,7 @@
       <address>
         <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
       </address>
-      <p>&copy; 2026 Regents of the University of Michigan</p>
+      <p>&copy; <span id="year">2026</span> Regents of the University of Michigan</p>
     </footer>
   </body>
 </html>

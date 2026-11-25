@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <header>
@@ -18,7 +19,8 @@
         alt="UMSI Logo"
       />
       <nav>
-        <ul>
+        <button type="button" id="menu-toggle">Menu</button>
+        <ul id="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="prep.html">Preparing for Your Experience</a></li>
           <li><a href="start.html" class="active">Start Your Experience</a></li>
@@ -172,7 +174,7 @@
       <address>
         <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
       </address>
-      <p>&copy; 2026 Regents of the University of Michigan</p>
+      <p>&copy; <span id="year">2026</span> Regents of the University of Michigan</p>
     </footer>
   </body>
 </html>

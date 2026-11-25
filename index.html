@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <header>
@@ -18,7 +19,8 @@
         alt="UMSI Logo"
       />
       <nav>
-        <ul>
+        <button type="button" id="menu-toggle">Menu</button>
+        <ul id="nav-links">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="prep.html">Preparing for Your Experience</a></li>
           <li><a href="start.html">Start Your Experience</a></li>
@@ -28,7 +30,7 @@
     </header>
     <div id="title"><h1>Welcome to the UMSI Engaged Learning Office</h1></div>
     <main id="main">
-      <section >
+      <section class="intro">
         <div id="section-2">
           <h2>Build Skills. Work with Partners. Have an Impact.</h2>
           <p>
@@ -73,7 +75,7 @@
           src="images/UMSI_CampusFall_UMSIBackpack_02.jpg"
           alt="A student wears a UMSI backpack in fall on the drag."
         />
-        <ul class="card-grid">
+        <ul class="card-grid four-up">
           <li class="card">
             <strong>Follow a clear process:</strong>Move from preparation and
             project launch through active work, reflection, and responsible
@@ -221,7 +223,7 @@
         </article>
         </div>
       </section>
-      <section>
+      <section class="about">
         <h2>About the Engaged Learning Office</h2>
         <p>
           The Engaged Learning Office works with partners across industries and
@@ -267,7 +269,7 @@
       <address>
         <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
       </address>
-      <p>&copy; 2026 Regents of the University of Michigan</p>
+      <p>&copy; <span id="year">2026</span> Regents of the University of Michigan</p>
     </footer>
   </body>
 </html>
